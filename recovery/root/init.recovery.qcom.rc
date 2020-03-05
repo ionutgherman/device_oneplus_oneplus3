@@ -1,6 +1,7 @@
 on boot
     # Enable sched boost
     write /proc/sys/kernel/sched_boost 1
+    mkdir /system_root/system
 
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
